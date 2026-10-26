@@ -1,0 +1,8 @@
+print("Victor")
+print(7777)
+print(6+2/2*3)
+print(10/3)
+print(10/3.0)
+print(10//3)
+print(10/0.2)
+print(99)
