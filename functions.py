@@ -11,3 +11,7 @@ with open("temp.txt", "r") as file:
     print(content)
 
 greet()
+
+
+
+# 'ffmpeg_location': r 'C:\ffmpeg\bin'
