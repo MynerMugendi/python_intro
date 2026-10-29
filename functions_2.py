@@ -53,7 +53,7 @@ people = [
 
 sorted_by_age = sorted(people, key=lambda x: x["name"], reverse = True)
 print(sorted_by_age)
-# build_profile(experience=100, name="Jane", age='23', proffesion = "Programming", gender="male")
+# build_profile(experience=100, name="Jane", age='23', profession = "Programming", gender="male")
 
 # call the function
 # print(add(9, 7, 5))
