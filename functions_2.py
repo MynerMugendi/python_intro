@@ -1,3 +1,6 @@
+import math
+
+
 def add(a, b, c):
     res = a + b + c
     return res
@@ -14,9 +17,19 @@ Returns:
 Integers or floats
     """
 
+
 def build_profile(**kwargs):  # dict key-word args
     for k, w in kwargs.items():
         print(f"{k} : {w}")
+
+build_profile(
+    experience=100,
+    name="Jne",
+    age=24,
+    profession="programming",
+    gender="male"
+)
+
 
 
 def fancy(name, *hop, **kwargs):
@@ -39,11 +52,10 @@ print(square(5))
 res = square(2.9)
 print(res)
 
-surface_area_cylinder = lambda r, h: 22 / 7 * r ** 2 * 2 + 22 / 7 * 2 * r * h
+surface_area_cylinder = lambda r, h: math.pi * r ** 2 * 2 + 22 / 7 * 2 * r * h
 
 value = (surface_area_cylinder(2.789, 7.72))
 print(value)
-
 
 people = [
     {"name": "Mufasa", "age": 28},
@@ -51,7 +63,7 @@ people = [
     {"name": "Simba", "age": 18},
 ]
 
-sorted_by_age = sorted(people, key=lambda x: x["name"], reverse = True)
+sorted_by_age = sorted(people, key=lambda x: x["age"], reverse=True)
 print(sorted_by_age)
 # build_profile(experience=100, name="Jane", age='23', profession = "Programming", gender="male")
 
