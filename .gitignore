@@ -8,3 +8,10 @@ __pycache__/
 #git commit -m "Python basics"
 #git remote add origin https://github.com/MynerMugendi/python-basics.git
 #git push -u origin master
+#pip freeze > requirements.txt
+
+#pip install -r
+*.mp3
+*.txt
+*.webm
+!requirements.txt
