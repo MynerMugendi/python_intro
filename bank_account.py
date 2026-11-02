@@ -18,11 +18,11 @@ class Client:
         print(self.gender)
         print(self.email)
 
-    def calc_age(self):
-        today = date.today()
-        birth_date = datetime.strptime(self.dob, "%Y-%m-%d")
-        age = today.year - birth_date.year
-        return age
+    # def calc_age(self):
+    #     today = date.today()
+    #     birth_date = datetime.strptime(self.dob, "%Y-%m-%d")
+    #     age = today.year - birth_date.year
+    #     return age
 
 
 class BankAccount:
@@ -51,6 +51,7 @@ class BankAccount:
 owner1 = Client("Jane Njeri", "A008", "1990-06-12", "F", "jane@gmail.com")
 owner2 = Client("James Wafula", "B008", "1993-07-22", "M", "wafula@gmail.com")
 
+
 acc1 = BankAccount(owner1, "12233", 67_800)
 acc2 = BankAccount(owner1, "12244", 96_000)
 acc3 = BankAccount(owner2, "12255", 99_000)
@@ -61,12 +62,13 @@ acc1.deposit(7000)
 acc1.print_details()
 acc1.withdraw(15_000)
 acc1.print_details()
-
-print("Jane's age:", owner1.calc_age())
-print("James' age:", owner2.calc_age())
-
-print(acc1.owner.names, acc1.owner.calc_age())
-print(owner1.names, owner1.calc_age())
+acc3.print_details()
+#
+# print("Jane's age:", owner1.calc_age())
+# print("James' age:", owner2.calc_age())
+#
+# print(acc1.owner.names, acc1.owner.calc_age())
+# # print(owner1.names, owner1.calc_age())
 
 
 

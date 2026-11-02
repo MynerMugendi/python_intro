@@ -21,6 +21,11 @@ class ContractEmployee(Employee):
     def __init__(self, name, email, department, salary, tenure):
         super().__init__(name, email, department, salary)
         self.tenure = tenure
+    def show_details(self):
+        print(f"Name:{self.name}")
+        print(f"Email:{self.email}")
+        print(f"Contract Length: {self.tenure}")
+
 
 
 p1 = PermanentEmployee("Hazel Wanja", "hazel@gmail.com", "HR", 100_000, "Britam", 2000)
