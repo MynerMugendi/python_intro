@@ -1,5 +1,5 @@
 import random
-from selectors import SelectSelector
+
 
 attempts = 7
 
@@ -28,11 +28,11 @@ def select_number(number, attempt=1):
         print("Please select a number between 1 and 100")
         return select_number(number, attempt)
 
-    # check_guess = lambda x, y: "correct" if x == y else (
-    #     "low" if x < y else "high"
+    # check_guess = lambda x, y: "Correct" if x == y else (
+    #     "Too low" if x < y else "Too high"
     # )
 
-
+# Has the same function as commented code above
 def check_guess(x, y):
     if x == y:
         return "Correct"
@@ -42,19 +42,19 @@ def check_guess(x, y):
         return "Too high"
 
 
-result = check_guess(guess, number)
+    result = check_guess(guess, number)
 
-if result == "Correct":
-    print("Congratulations! You guessed the number!")
-    print("You guessed it in", attempt, "attempt(s).")
-    return
+    if result == "Correct":
+        print("Congratulations! You guessed the number!")
+        print("You guessed it in", attempt, "attempt(s).")
+        return
 
-if result == "Too low":
-    print("Too low! Try a higher number")
-else:
-    print("Too high! Try a higher number")
+    if result == "Too low":
+        print("Too low! Try a higher number")
+    else:
+        print("Too high! Try a higher number")
 
-select_number(number, attempt + 1)
+    select_number(number, attempt + 1)
 
 display_rules()
 random_number = random.randint(1, 100)
