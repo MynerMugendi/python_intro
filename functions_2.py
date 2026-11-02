@@ -4,8 +4,7 @@ def add(a, b, c):
 
 
 def addition(x, *hop):
-    total = sum(hop)
-    return total
+
     """
 Returns the sum of all the numbers passed as arguments
 Parameters:
@@ -13,6 +12,7 @@ integers or floats or a mix of integers and floats
 Returns:
 Integers or floats
     """
+
 
 def build_profile(**kwargs):  # dict key-word args
     for k, w in kwargs.items():
